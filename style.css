@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+header {
+    text-align: right;
+    height: 80px;
+    background-color: black;
+}
+
+header button {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    margin-right: 5px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh - 160px);
+}
+
+.gallery {
+    height: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.avatar {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    border: 2px solid green;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3px;
+}
